@@ -40,7 +40,13 @@
       <div class="grid-item"></div>
     </div>
     <div class="upload-container">
-
+      <input
+        type="file"
+        id="audioFile"
+        accept="audio/*"
+        onchange="handleFileSelect()"
+      />
+      <audio controls id="audioPreview"></audio>
     </div>
 
     <script src="index.js"></script>
